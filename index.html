@@ -20,22 +20,33 @@
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
             </ul>
+            <button class="btn btn-primary mx-2" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Quick Filter
+              </button>
             <form class="form-inline my-2 my-lg-0">
                 <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                
+
             </form>
-     
+
         </div>
     </nav>
-    <ul class="nav justify-content-end mr-sm-4 my-2">
-        <li class="nav-item">
-            <button id="titleFilter" class="btn btn-outline-success my-2 my-sm-0 mx-2 btn-sm" type="button">Titles</button>
-        </li>
-        <li class="nav-item">
-            <button id="notesfilter" class="btn btn-outline-success my-2 my-sm-0 mx-2 btn-sm" type="button">Notes</button>
-        </li>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark collapse" id="collapseExample">
+            
+        <div class="collapse navbar-collapse d-flex justify-content-lg-end" id="navbarSupportedContent">
+            <ul class="list-inline">
+            <li class="list-inline-item align-middle"><h2><span class="badge badge-secondary">Filter by:</span></h2></li>
+            <li class="list-inline-item align-middle"><button id="all" class="btn btn-success" type="button">everything</button></li>
+            <li class="list-inline-item align-middle"><button id="titleFilter" class="btn btn-success" type="button">title</button></li>
+            <li class="list-inline-item align-middle"><button id="notesFilter" class="btn btn-success" type="button">description</button></li>
+        </div>
     </ul>
+    </nav>
+
+
+    
     <!-- <div class="float-right mr-sm-4 my-2">
         <button class="btn btn-outline-success my-2 my-sm-0" type="button">Titles</button>
         <button class="btn btn-outline-success my-2 my-sm-0" type="button">Notes</button>
@@ -52,12 +63,14 @@
                 <form>
                     <div class="form-group">
                         <label for="exampleFormControltitle">Write Note Here.....</label>
-                        <input id="title" class="form-control mr-sm-2" type="search" placeholder="Title" aria-label="title" required>
+                        <input id="title" class="form-control mr-sm-2" type="search" placeholder="Title"
+                            aria-label="title" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <!-- <label for="exampleFormControlTextarea1">Write Note Here.....</label> -->
-                        <textarea id="addTxt" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description"></textarea>
+                        <textarea id="addTxt" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Description"></textarea>
                     </div>
                 </form>
                 <button id="addBtn" class="btn btn-primary">Add</button>
@@ -73,6 +86,9 @@
             </h6>
         </div>
 
+
+
+        
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
